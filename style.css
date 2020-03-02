@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+body {
+  min-height: 98vh;
+  background: #f8efba;
+}
+.clear-instruction {
+  border: 2px solid black;
+  width: 170px;
+  margin: 10px 0 0 10px;
+  z-index: 1;
+  padding-left: 5px;
+}
+.drawing {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+.shape {
+  position: absolute;
+  z-index: -1;
+  border: 5px solid black;
+}
+.color-pallette,
+.thickness,
+.shapes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 170px;
+  margin: 10px 0 0 10px;
+  border: 2px solid black;
+}
+.color-pallette .red,
+.color-pallette .green,
+.color-pallette .blue,
+.color-pallette .greenblue,
+.color-pallette .black,
+.color-pallette .purple {
+  height: 40%;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.color-pallette .red {
+  background: #ed553b;
+}
+.color-pallette .green {
+  background: #4ca26c;
+}
+.color-pallette .blue {
+  background: #163f5f;
+}
+.color-pallette .greenblue {
+  background: #58b19f;
+}
+.color-pallette .black {
+  background: black;
+}
+.color-pallette .purple {
+  background: #8f62e4;
+}
+.thickness,
+.shapes {
+  height: 40px;
+}
+.shapes {
+  width: 70px;
+}
+.thickness .extra-small,
+.thickness .small,
+.thickness .medium,
+.thickness .large {
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.thickness .extra-small {
+  height: 30%;
+  width: 7%;
+}
+.thickness .small {
+  height: 40%;
+  width: 10%;
+}
+
+.thickness .medium {
+  height: 55%;
+  width: 15%;
+}
+
+.thickness .large {
+  height: 75%;
+  width: 20%;
+}
+.eraser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  margin: 10px 0 0 10px;
+  user-select: none;
+  cursor: pointer;
+}
+.eraser i {
+  font-size: 25px;
+}
+.rectangle {
+  height: 50%;
+  width: 50%;
+  border: 4px solid black;
+  cursor: pointer;
+}
+.fill {
+  cursor: pointer;
+}
